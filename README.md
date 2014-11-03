@@ -1,7 +1,7 @@
 cpu-topology
 ============
 
-A small script to view the topology of the CPUs.
+A small script to view the CPU topology on a machine.
 Running ./cpu-topology.py will give a breakdown based on socket, NUMA node, core, and hardware thread on the current machine.
 
 Sometimes it's useful to pin processes to specific cores; one way to do it is by placing the proesses as "far away" as possible. In this case, you continuously alternate between sockets, nodes, cores and threads.

@@ -87,7 +87,7 @@ def printTopology(info):
 
 
 # Avoid using processor 0, only put at the very last,
-# since it's normally used for OS, interrupts etc
+# since it's normally used by the OS, interrupts etc
 def scatter(socket, node, core, processor, info):
 	if socket >= len(info):
 		return scatter(0, node+1, core, processor, info)
